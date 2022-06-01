@@ -1,0 +1,23 @@
+//make a card that is white and has an outline of black and a border of 1px and each card is a square and centered in the middle of the page
+
+.scrollable{
+	height: 100vh;
+}
+
+.card {
+	width: 25vw;
+	margin-bottom: 2vh;
+	height: 25vh;
+	background-color: white;
+	border: 1px solid black;
+	display: flex;
+	align-items: center;
+	transform: translateX(100%);
+	opacity: 0;
+	transition: 1s;
+}
+
+.card.show {
+	transform: translateX(0);
+	opacity: 1;
+}
